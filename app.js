@@ -38,6 +38,8 @@ resetButton.onclick = () => {
 
 strikeButton.onclick = () => {
   //play audio
+  strikeAudio.pause();
+  strikeAudio.currentTime = 0;
   strikeAudio.play();
 
   //generate random strike value
